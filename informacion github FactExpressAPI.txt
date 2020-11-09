@@ -1,0 +1,11 @@
+echo "# FactExpressAPI" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/julio-cod/FactExpressAPI.git
+git push -u origin main
+git push origin master
+
+ir al proyecto
+cd c/'Desarrollo de Aplicaciones'/'Proyecto FactExpress'/'FactExpress API'
