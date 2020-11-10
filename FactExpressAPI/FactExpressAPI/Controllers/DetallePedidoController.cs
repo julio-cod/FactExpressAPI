@@ -10,21 +10,21 @@ using System.Web.Http;
 
 namespace FactExpressAPI.Controllers
 {
-    public class PedidoController : ApiController
+    public class DetallePedidoController : ApiController
     {
         SqlConnection conectar = new SqlConnection(ConexionDB.connectionString);
 
         [HttpGet]
-        public IHttpActionResult listadoPedidosParaEntregar(int codUsuario)
+        public IHttpActionResult listadoDetallePedidosParaEntregar(int codPedido)
         {
             DataTable dt = new DataTable();
             using (conectar)
             {
                 conectar.Open();
-                string query = "Select codPedido,codUsuarioEnttrega,nombreUsuario,codigoCliente,nombreCliente,lugarEntrega,fechaEntrega,totalDescuentos,total,estado,comentario from PedidosAsignados Where estado = 'Asignado' and codUsuarioEnttrega = @codUsuarioEnttrega";
+                string query = "Select codigo,codProducto,descripcion,cantidad,precio,descuento from DetallePedido where codPedido = @codPedido";
 
                 SqlDataAdapter sda = new SqlDataAdapter(query, conectar);
-                sda.SelectCommand.Parameters.AddWithValue("@codUsuarioEnttrega", codUsuario);
+                sda.SelectCommand.Parameters.AddWithValue("@codPedido", codPedido);
                 sda.Fill(dt);
             }
 
@@ -32,10 +32,6 @@ namespace FactExpressAPI.Controllers
 
 
         }
-
-        
-
-  
 
 
     }

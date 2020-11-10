@@ -82,3 +82,4 @@ C:\Desarrollo de Aplicaciones\Proyecto FactExpress\FactExpress API\FactExpressAP
 C:\Desarrollo de Aplicaciones\Proyecto FactExpress\FactExpress API\FactExpressAPI\FactExpressAPI\obj\Release\FactExpressAPI.csproj.CopyComplete
 C:\Desarrollo de Aplicaciones\Proyecto FactExpress\FactExpress API\FactExpressAPI\FactExpressAPI\obj\Release\FactExpressAPI.dll
 C:\Desarrollo de Aplicaciones\Proyecto FactExpress\FactExpress API\FactExpressAPI\FactExpressAPI\obj\Release\FactExpressAPI.pdb
+C:\Desarrollo de Aplicaciones\Proyecto FactExpress\FactExpress API\FactExpressAPI\FactExpressAPI\obj\Release\FactExpressAPI.csprojAssemblyReference.cache

@@ -8,4 +8,4 @@ git push -u origin main
 git push origin master
 
 ir al proyecto
-cd c/'Desarrollo de Aplicaciones'/'Proyecto FactExpress'/'FactExpress API'
+cd c/'Proyecto FactExpress'/'FactExpress API'
