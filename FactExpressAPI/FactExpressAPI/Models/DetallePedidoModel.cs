@@ -5,7 +5,7 @@ using System.Web;
 
 namespace FactExpressAPI.Models
 {
-    public class DetallePedidoViewModel
+    public class DetallePedidoModel
     {
         public int Codigo { get; set; }
         public int CodPedido { get; set; }

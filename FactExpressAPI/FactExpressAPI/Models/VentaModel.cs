@@ -5,20 +5,21 @@ using System.Web;
 
 namespace FactExpressAPI.Models
 {
-    public class PedidoViewModel
+    public class VentaModel
     {
-        public int Codigo { get; set; }
-        public int CodUsuarioDelSistema { get; set; }
+        public int CodigoVenta { get; set; }
         public int CodigoCliente { get; set; }
         public string NombreCliente { get; set; }
-        public string LugarEntrega { get; set; }
-        public DateTime FechaOrden { get; set; }
-        public DateTime FechaEntrega { get; set; }
+        public int CodigoPedido { get; set; }
         public decimal TotalDescuentos { get; set; }
         public decimal Total { get; set; }
         public decimal TotalGanancia { get; set; }
-        public string Estado { get; set; }
-        public string Comentario { get; set; }
+        public string TipoPago { get; set; }
+        public DateTime Fecha { get; set; }
+        public int CodUsuarioEntrega { get; set; }
+        public string NombreUsuarioEntrega { get; set; }
+
+        
 
     }
 }
